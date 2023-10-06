@@ -41,7 +41,7 @@ const validarFormulario = () => {
 }
 
 // Asignar la función enviarFormulario al evento onsubmit del formulario
-document.getElementById("registroForm").onsubmit = function () {
+document.getElementById("registroForm").onsubmit = () => {
     return validarFormulario();
 };
 

@@ -1,3 +1,8 @@
+/**
+ *  Autor: Diego Alonso Molina (Full Stack Developer)
+ *  GitHub: 
+ */
+
 // Validar que el nombre no esté vacío
 function validarNombre(nombre) {
     if (nombre === "") {
@@ -9,7 +14,7 @@ function validarNombre(nombre) {
 
 // Validar que la dirección de correo electrónico sea válida
 function validarEmail(email) {
-    var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!regex.test(email)) {
         alert("La dirección de correo electrónico no es válida.");
         return false;
